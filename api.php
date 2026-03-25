@@ -23,18 +23,20 @@ if ($method === 'POST') {
     $data = json_decode(file_get_contents('php://input'), true);
     $stmt = $pdo->prepare("INSERT INTO tickets (id, title, description, category, priority, status, creator, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
     
-    $id = $data['id']; 
-    $createdAt = date('Y-m-d H:i:s', strtotime($data['createdAt'])); 
+    // Generate ID and Timestamp securely on the server
+    // Example: Creates an ID like "TKT-A1B2C3"
+    $id = 'TKT-' . strtoupper(substr(uniqid(), -6)); 
+    $createdAt = date('Y-m-d H:i:s'); // Gets current server time
 
     try {
         $stmt->execute([
             $id,
-            $data['title'],
-            $data['description'],
+            trim($data['title']),
+            trim($data['description']),
             $data['category'],
             $data['priority'],
             $data['status'],
-            $data['creator'],
+            trim($data['creator']),
             $createdAt
         ]);
         echo json_encode(["success" => true, "id" => $id]);
