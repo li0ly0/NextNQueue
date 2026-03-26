@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Portal - ZenTick</title>
+    <title>User Dashboard - NextNQueue</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -17,8 +17,7 @@
     <div class="min-h-screen bg-black flex flex-col text-white">
         <header class="bg-zinc-950 border-b border-zinc-900 px-8 py-4 flex items-center justify-between shrink-0">
             <div class="flex items-center gap-3">
-                <div class="w-8 h-8 bg-white rounded-lg flex items-center justify-center"><i data-lucide="ticket" class="w-5 h-5 text-black"></i></div>
-                <span class="font-bold text-xl text-white tracking-tight">ZenTick <span class="text-zinc-500 font-medium">Support</span></span>
+                <span class="font-bold text-2xl text-white tracking-tight">NextNQueue</span>
             </div>
             <div class="flex items-center gap-4">
                 <button @click="logout()" class="text-sm font-semibold text-zinc-500 hover:text-white flex items-center gap-1.5 transition-colors">
@@ -100,7 +99,7 @@
             <div class="lg:col-span-4 space-y-4">
                 <section class="flex items-center justify-between pb-2 border-b border-zinc-900">
                     <div>
-                        <h2 class="text-lg font-bold text-white">Recent Tickets</h2>
+                        <h2 class="text-lg font-bold text-white">My Tickets</h2>
                     </div>
                     <div class="flex items-center gap-1 bg-zinc-900 p-1 rounded-lg border border-zinc-800">
                         <button @click="statusFilter = 'all'" :class="statusFilter === 'all' ? 'bg-zinc-800 text-white shadow-sm' : 'text-zinc-500'" class="px-3 py-1 rounded-md text-[10px] font-bold uppercase tracking-wider transition-all">All</button>
