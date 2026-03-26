@@ -399,20 +399,16 @@
             activeTab: 'all',
             searchQuery: '',
             
-            // Ticket State
             isCreateModalOpen: false,
             selectedTicket: null,
             tickets: [],
-            // Initializing with empty strings; creator will be set on add
             newTicketData: { title: '', creator: '', category: 'Hardware', priority: 'medium', description: '' },
             notesStatus: '', 
             
-            // Accounts State
             users: [],
             isUserModalOpen: false,
             userData: { id: null, name: '', email: '', password: '', role: 'user' },
 
-            // ---- TICKETS LOGIC ----
             getStats() {
                 const base = this.tickets.filter(t => this.sidebarView === 'dashboard' ? (t.status !== 'resolved' && t.status !== 'closed') : (t.status === 'resolved' || t.status === 'closed'));
                 return {
@@ -432,7 +428,6 @@
                     if (this.activeTab !== 'all' && t.status !== this.activeTab) return false;
                     if (this.searchQuery && this.sidebarView !== 'accounts') {
                         const q = this.searchQuery.toLowerCase();
-                        // Ensuring t.creator exists before calling toLowerCase()
                         return (t.title?.toLowerCase().includes(q) || 
                                 t.id?.toString().toLowerCase().includes(q) || 
                                 t.creator?.toLowerCase().includes(q));
@@ -452,7 +447,6 @@
             },
 
             async addTicket() {
-                // FORCE the creator to be the name string from the current session
                 const nameToStore = this.currentUser.name || "Unknown User";
                 
                 const newTicket = {
