@@ -5,6 +5,21 @@ NextNQueue is a streamlined, monochromatic IT Helpdesk and Ticketing System engi
 Note: This project is provided strictly as a foundational functional template. The default UI might suck depending on your specific needs or tastes, but because it relies entirely on utility classes, it is highly customizable. Feel free to make it your own!
 
 ---
+## Interface Preview
+
+| Login Page | Dashboard Overview |
+| :---: | :---: |
+| ![Login](./images/login.png) | ![Dashboard](./images/dashboard.png) |
+
+| Employee Management | Attendance Summary |
+| :---: | :---: |
+| ![Employees](./images/employees.png) | ![Summary](./images/summary.png) |
+
+<p align="center">
+  <img src="./images/Attendify.gif" alt="Attendify Demo Walkthrough" width="100%">
+</p>
+
+---
 
 ## Features
 
