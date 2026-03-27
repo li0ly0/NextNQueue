@@ -7,16 +7,8 @@ Note: This project is provided strictly as a foundational functional template. T
 ---
 ## Interface Preview
 
-| Login Page | Dashboard Overview |
-| :---: | :---: |
-| ![Login](./images/login.png) | ![Dashboard](./images/dashboard.png) |
-
-| Employee Management | Attendance Summary |
-| :---: | :---: |
-| ![Employees](./images/employees.png) | ![Summary](./images/summary.png) |
-
 <p align="center">
-  <img src="./images/Attendify.gif" alt="Attendify Demo Walkthrough" width="100%">
+  <img src="./gif/nextnqueue.gif" alt="NextNQueue Demo Walkthrough" width="100%">
 </p>
 
 ---
