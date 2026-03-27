@@ -8,7 +8,7 @@ Note: This project is provided strictly as a foundational functional template. T
 ## Interface Preview
 
 <p align="center">
-  <img src="./gif/nextnqueue.gif" alt="NextNQueue Demo Walkthrough" width="100%">
+  <img src="./video/nextnqueue.mp4" alt="NextNQueue Demo Walkthrough" width="100%">
 </p>
 
 ---
