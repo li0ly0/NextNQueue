@@ -1,6 +1,6 @@
 # NextNQueue
 
-NextNQueue is a streamlined, monochromatic IT Helpdesk and Ticketing System engineered for performance and operational efficiency. Designed with a zero-build frontend architecture, it ensures rapid deployment and high responsiveness across diverse hardware configurations. 
+NextNQueue is a straightforward IT helpdesk and ticketing tool designed to keep support tasks organized without the usual clutter. It features a clean, black-and-white interface that focuses entirely on the work at hand, making it easy for teams to track and resolve technical issues quickly.
 
 Note: This project is provided strictly as a foundational functional template. The default UI might suck depending on your specific needs or tastes, but because it relies entirely on utility classes, it is highly customizable. Feel free to make it your own!
 
