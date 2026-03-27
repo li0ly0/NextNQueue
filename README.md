@@ -17,7 +17,7 @@ NextNQueue is a lightweight, dark-themed IT Helpdesk and Ticketing System design
 * **Intuitive Submission Form:** Easy-to-use interface for submitting new support requests with visual category selection.
 * **Ticket Tracking:** Users can view a history of their submitted tickets and filter by active/closed status.
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 **Frontend:**
 * HTML5
@@ -29,7 +29,7 @@ NextNQueue is a lightweight, dark-themed IT Helpdesk and Ticketing System design
 * PHP (RESTful API endpoints)
 * Relational Database (MySQL/SQLite)
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 Currently, this repository contains the **frontend architecture**. To run this locally, you will need to implement the backend API endpoints.
 
@@ -45,7 +45,3 @@ Currently, this repository contains the **frontend architecture**. To run this l
    * `auth.php` - Handles `POST` requests for login validation. Returns a JSON user object.
    * `api.php` - Handles `GET`, `POST`, and `PATCH` requests for fetching, creating, and updating tickets.
    * `users.php` - Handles `GET`, `POST`, `PATCH`, and `DELETE` requests for user management.
-
-## 📝 License
-
-This project is licensed under the MIT License.
